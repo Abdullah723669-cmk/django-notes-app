@@ -1,4 +1,4 @@
-version: "3.9"
+
 
 services:
   nginx:
@@ -13,12 +13,12 @@ services:
     networks:
       - notes-app-nw
 
-  web:
+  django_app:
      # build:
      #  context: .
     # image: django_app
     image: "mamun723/notes-app:latest" 
-    # container_name: "django_cont"
+    container_name: "django_app"
     ports:
       - "8000:8000"
     command: sh -c "python manage.py migrate --noinput && gunicorn notesapp.wsgi --bind 0.0.0.0:8000"
