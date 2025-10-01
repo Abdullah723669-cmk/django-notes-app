@@ -13,7 +13,7 @@ services:
     networks:
       - notes-app-nw
 
-  django_app:
+  web:
      # build:
      #  context: .
     # image: django_app
