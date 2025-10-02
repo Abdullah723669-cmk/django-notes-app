@@ -36,9 +36,9 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                echo "This is Mamun-Deploying stage"
+                echo "This is Django App deploying stage"
                 // Use docker-compose (depends on installation)
-                sh 'docker-compose up -d || docker compose up -d'
+                sh 'dokcer compose down && docker compose up -d'
                 echo "App deployed successfully!!"
             }
         }
