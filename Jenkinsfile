@@ -36,7 +36,7 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                echo "This is Django App deploying stage"
+                echo "MY Django App is deploying now ..."
                 // Use docker-compose (depends on installation)
                 sh 'dokcer compose down && docker compose up -d'
                 echo "App deployed successfully!!"
