@@ -1,0 +1,18 @@
+# Ignore git history
+.git
+.gitignore
+
+# Ignore Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+
+# Ignore database/data files
+data/
+*.db
+
+# Ignore Docker-related files not needed
+*.log
